@@ -28,7 +28,7 @@ function netfeeCustomerRecharge(msg) {
 }
 
 function retry_with_delay(attempt) {
-  const delays = [2, 5, 10, 20, 30, 60];
+  const delays = [2, 5, 10, 20, 30, 60]; // in minute
   return delays[attempt - 1] * 60 * 1000;
 }
 
@@ -49,7 +49,7 @@ setInterval(() => {
   } else {
     nextMessage.status = "rejected";
     nextMessage.attemptCount += 1;
-    const delay = retry_with_delay(nextMessage.attemptCount);
+    const delay = retry_with_delay(nextMessage.attemptCount); // 
     nextMessage.nextAttempAt = new Date(now.getTime() + delay);
     // console.log("Log rejected message: ", payments);
   }

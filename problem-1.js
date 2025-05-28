@@ -13,4 +13,4 @@ function TotalConsumedMojos(initial_mojos){
     let consumed_mojos =  initial_mojos + extra_mojos
     return consumed_mojos
 }
-console.log("Total Mojo Consumed: ", TotalConsumedMojos(10)) // result = 14
+console.log("Total Mojo Consumed: ", TotalConsumedMojos(15)) // result = 14

@@ -1,8 +1,8 @@
 // Problem 2: Inventory Management with Multiple Units
 
 let initial_stock = {
-    "tons": 1,
-    "kilograms": 0,
+    "tons": 2,
+    "kilograms": 3,
     "grams": 0,
     "milligrams": 0
 }
